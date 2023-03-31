@@ -1,15 +1,11 @@
 from car import Car
+from account import Account
 
 def clases():
-    car = Car()
-    car.license = 'AMS234'
-    car.driver = 'Andres Herrera'
+    car = Car('OUL929', Account('Nicolas Diaz', 'RAR1504'))
     print(vars(car))
+    print(vars(car.driver))
     
-    car2 = Car()
-    car2.license = 'OUL929'
-    car2.driver = 'Nicolas Diaz'
-    print(vars(car2))
-
+    
 if __name__ == '__main__':
     clases()
