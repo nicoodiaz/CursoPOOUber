@@ -8,3 +8,9 @@ class UberVan(Car):
         super.__init__(license, driver)
         self.type_car_accepted = type_car_accepted
         self.seats_material = seats_material
+        
+    def setPassenger(self, passenger):
+        if passenger == 6:
+            self.setPassenger = passenger
+        else:
+            print("You need yo assign 6 passengers")
